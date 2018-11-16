@@ -25,12 +25,12 @@ error_reporting(E_ALL & ~E_NOTICE);
                 <span class="login100-form-title p-b-34 p-t-27"><i class="fa fa-calendar"></i> ระบบจองห้องประชุม</span>
 
                 <div class="wrap-input100 validate-input" data-validate = "Enter username">
-                    <input class="input100" type="text" name="txtuser" placeholder="ชื่อผู้ใช้งาน">
+                    <input class="input100" type="text" name="txtuser" placeholder="ชื่อผู้ใช้งาน" pattern="[0-9a-zA-Z_.-@]*">
                     <span class="focus-input100" data-placeholder="&#xf207;"></span>
                 </div>
 
                 <div class="wrap-input100 validate-input" data-validate="Enter password">
-                    <input class="input100" type="password" name="txtpass" placeholder="รหัสผ่าน">
+                    <input class="input100" type="password" name="txtpass" placeholder="รหัสผ่าน" pattern="[0-9a-zA-Z_.-@]*">
                     <span class="focus-input100" data-placeholder="&#xf191;"></span>
                 </div>
 

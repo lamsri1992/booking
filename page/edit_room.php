@@ -73,7 +73,7 @@ $rooms = $usedFnc->getRoom();
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">ชื่อห้องประชุม</label>
                         <div class="col-md-8">
-                            <input name="room_name" type="text" class="form-control" required>
+                            <input name="room_name" type="text" class="form-control" required pattern="[0-9a-zA-Z_.-@]*">
                         </div>
                     </div>
                     <div class="form-group">

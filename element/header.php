@@ -53,28 +53,28 @@
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">หัวข้อ</label>
                         <div class="col-md-8">
-                            <input name="title" type="text" class="form-control" required>
-                            <input name="maker" type="hidden" class="form-control" value="<?=$_SESSION['user_id']?>" required>
+                            <input name="title" type="text" class="form-control" required pattern="[0-9a-zA-Z_.-@]*">
+                            <input name="maker" type="hidden" class="form-control" value="<?=$_SESSION['user_id']?>" required pattern="[0-9a-zA-Z_.-@]*">
                         </div>
                     </div>
                     <div id="basicExample">
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="textinput">วันที่</label>
                             <div class="col-md-8">
-                                <input id="d_start" name="d_start" type="text" class="form-control date start" placeholder="เลือกวันที่" required>
+                                <input id="d_start" name="d_start" type="text" class="form-control date start" placeholder="เลือกวันที่" required pattern="[0-9a-zA-Z_.-@]*">
                                 <input id="d_end" name="d_end" type="hidden" class="form-control date end">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="textinput">ตั้งแต่</label>
                             <div class="col-md-8">
-                                <input id="t_start" name="t_start" type="text" class="form-control time start" placeholder="เลือกช่วงเวลา" required>
+                                <input id="t_start" name="t_start" type="text" class="form-control time start" placeholder="เลือกช่วงเวลา" required pattern="[0-9a-zA-Z_.-@]*">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="textinput">ถึง</label>
                             <div class="col-md-8">
-                                <input name="t_end" id="timeEnd" type="text" class="form-control time end" placeholder="เลือกช่วงเวลา" required>
+                                <input name="t_end" id="timeEnd" type="text" class="form-control time end" placeholder="เลือกช่วงเวลา" required pattern="[0-9a-zA-Z_.-@]*">
                             </div>
                         </div>
                         <div class="form-group">

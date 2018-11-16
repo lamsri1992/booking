@@ -75,19 +75,19 @@ $users = $usedFnc->getUser();
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">ชื่อ-สกุล</label>
                         <div class="col-md-8">
-                            <input name="user_name" type="text" class="form-control" required>
+                            <input name="user_name" type="text" class="form-control" required pattern="[0-9a-zA-Z_.-@]*">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">Email</label>
                         <div class="col-md-8">
-                            <input name="user_email" type="text" class="form-control" required>
+                            <input name="user_email" type="text" class="form-control" required pattern="[0-9a-zA-Z_.-@]*">
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">Password</label>
                         <div class="col-md-8">
-                            <input name="user_pass" type="password" class="form-control" required>
+                            <input name="user_pass" type="password" class="form-control" required pattern="[0-9a-zA-Z_.-@]*">
                         </div>
                     </div>
                     <div class="form-group">

@@ -18,7 +18,7 @@ $result = $detailFnc->editRoom($id);
                     <div class="form-group">
                         <label class="col-md-2 control-label" for="textinput">ชื่อห้องประชุม</label>
                         <div class="col-md-8">
-                            <input name="room_name" type="text" class="form-control" value="<?=$result['room_name']?>" required>
+                            <input name="room_name" type="text" class="form-control" value="<?=$result['room_name']?>" required pattern="[0-9a-zA-Z_.-@]*">
                             <input name="room_id" type="hidden" class="form-control" value="<?=$result['room_id']?>">
                         </div>
                     </div>

@@ -18,20 +18,20 @@ $result = $detailFnc->editUser($id);
                 <div class="form-group">
                     <label class="col-md-2 control-label" for="textinput">ชื่อ-สกุล</label>
                     <div class="col-md-8">
-                        <input name="user_name" type="text" class="form-control" value="<?=$result['user_name']?>" required>
+                        <input name="user_name" type="text" class="form-control" value="<?=$result['user_name']?>" required pattern="[0-9a-zA-Z_.-@]*">
                         <input name="user_id" type="hidden" class="form-control" value="<?=$result['user_id']?>">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label" for="textinput">Email</label>
                     <div class="col-md-8">
-                        <input name="user_email" type="text" class="form-control" value="<?=$result['user_email']?>" required>
+                        <input name="user_email" type="text" class="form-control" value="<?=$result['user_email']?>" required pattern="[0-9a-zA-Z_.-@]*">
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="col-md-2 control-label" for="textinput">Password</label>
                     <div class="col-md-8">
-                        <input name="user_pass" type="text" class="form-control" value="<?=$result['user_pass']?>" required>
+                        <input name="user_pass" type="text" class="form-control" value="<?=$result['user_pass']?>" required pattern="[0-9a-zA-Z_.-@]*">
                     </div>
                 </div>
                 <div class="form-group">
