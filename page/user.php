@@ -18,7 +18,7 @@ $result = $detailFnc->editUser($id);
                 <div class="form-group">
                     <label class="col-md-2 control-label" for="textinput">ชื่อ-สกุล</label>
                     <div class="col-md-8">
-                        <input name="user_name" type="text" class="form-control" value="<?=$result['user_name']?>" required pattern="[0-9a-zA-Z_.-@]*">
+                        <input name="user_name" type="text" class="form-control" value="<?=$result['user_name']?>" required pattern="[a-zA-Z0-9ก-๙_.- ]+">
                         <input name="user_id" type="hidden" class="form-control" value="<?=$result['user_id']?>">
                     </div>
                 </div>

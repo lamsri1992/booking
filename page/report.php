@@ -80,10 +80,10 @@ $resRoom = $usedFnc->getRoom();
                     <div id="basicExample" class="form-group">
                         <label class="col-md-2 control-label" for="textinput">วันที่</label>
                         <div class="col-md-4">
-                            <input id="d_start" name="d_start" type="text" class="form-control date" placeholder="เลือกวันที่เริ่มต้น" pattern="[0-9a-zA-Z_.-@]*">
+                            <input id="d_start" name="d_start" type="text" class="form-control date" placeholder="เลือกวันที่เริ่มต้น">
                         </div>
                         <div class="col-md-4">
-                            <input id="d_end" name="d_end" type="text" class="form-control date" placeholder="เลือกวันที่สิ้นสุด" pattern="[0-9a-zA-Z_.-@]*">
+                            <input id="d_end" name="d_end" type="text" class="form-control date" placeholder="เลือกวันที่สิ้นสุด">
                         </div>
                     </div>
                     <div class="form-group">
